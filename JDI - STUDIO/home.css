@@ -19,18 +19,21 @@ margin: 0 0 10px 0;
 /* header */
     .header {
 width: 100%;
-position: absolute;
+background: #000;
+opacity: 0.5;
+position: fixed;
 left: 0;
 top: 0;
 z-index: 1000;
+transition: opacity 0.5s;
 }
+    .header:hover {opacity: 1;}
 
 /* container */
     .container {
 width: 100%;
 max-width: 1170px;
 margin: 0 auto;
-
 }
 /* header inner */
     .header-inner {
@@ -66,7 +69,7 @@ color: #fff;
 
 /* intro */
     .intro {
-height: 969px;
+height: 1020px;
 background: url("intro_img.jpg") center;
 display: flex;
 flex-direction: column;
@@ -75,7 +78,7 @@ justify-content: center;
     .container-text {
 margin: 0 auto;
 justify-content: center;
-    }
+}
 
 /* TEXT */
     .text {
@@ -88,4 +91,41 @@ max-width: 600px;
 }
 
 /* page */
-    
+    .page {
+width: 100%;
+max-width: 1170px;
+margin: 0 auto;
+height: 1020px;
+font-family: sans-serif;
+}
+/* text */
+    .page-text {
+color: #32719d;
+font-size: 30px;
+}
+    .text-page-h {
+margin: 100px 0 30px 0;
+display: flex;
+}
+    .text-page-p {
+font-size: 22px;
+color: #111;
+padding: 0 0 35px 0;
+border-bottom: 1px solid #000;
+}
+/* Blender */
+    .text-blender {
+text-align: center;
+font-size: 40px;
+margin: 30px 0 0 0;
+color: #000;
+}
+    .cup_{
+width: 500px;
+margin-left: 400px;
+}
+.cup_left {
+width: 500px;
+margin-left: 100px;
+margin-top: 10px;
+}
