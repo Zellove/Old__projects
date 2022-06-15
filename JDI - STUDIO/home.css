@@ -19,7 +19,7 @@ margin: 0 0 10px 0;
 /* header */
     .header {
 width: 100%;
-background: #000;
+background: rgba(36, 45, 78, .5);;
 opacity: 0.5;
 position: fixed;
 left: 0;
@@ -69,8 +69,14 @@ color: #fff;
 
 /* intro */
     .intro {
-height: 1020px;
+height: 900px;
+border-radius: 0 0 26% 40%;
 background: url("intro_img.jpg") center;
+}
+    .overlay {
+background: rgba(36, 45, 78, .5);
+border-radius: 0 0 20% 34%;
+height: 900px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -93,7 +99,7 @@ max-width: 600px;
 /* page */
     .page {
 width: 100%;
-max-width: 1170px;
+max-width: 1400px;
 margin: 0 auto;
 height: 1020px;
 font-family: sans-serif;
@@ -113,19 +119,18 @@ color: #111;
 padding: 0 0 35px 0;
 border-bottom: 1px solid #000;
 }
-/* Blender */
-    .text-blender {
+/* features */
+    .telegram_img {
+display: flex;
+width: 50%;
+}
+    .telegram_p {
+font-size: 30px;
 text-align: center;
-font-size: 40px;
-margin: 30px 0 0 0;
-color: #000;
-}
-    .cup_{
-width: 500px;
-margin-left: 400px;
-}
-.cup_left {
-width: 500px;
-margin-left: 100px;
-margin-top: 10px;
-}
+display:flex;
+    }
+    .telegram {
+padding: 80px 0;
+font-family: 'Montserrat';
+
+    }
