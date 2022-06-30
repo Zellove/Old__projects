@@ -114,3 +114,15 @@ margin: 0 0 10px 0;
     width: 250px;
     display: block;
 }
+/*               media         */
+.intro {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    display-wrap: wrap;
+}
+.media {
+    margin: 190px 0;
+    border: 5px solid #333;
+}
+

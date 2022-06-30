@@ -75,7 +75,7 @@ margin: 0 0 10px 0;
 .password:hover {opacity: 1;}
 .open {
     margin: 20px auto;
-    width: 50px;
+    width: 200px;
     display: block;
     justify-content: center;
     color: #fff;
