@@ -1,0 +1,141 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-decoration:none;
+    background: url("img/Steam-background.jpeg");
+    z-index: 1;
+    }
+    *,
+    *:before,
+    *:after {text-decoration:none;}
+    
+    h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    }
+    ::-webkit-scrollbar {
+    width: 0;
+    }
+    p {margin: 0 0 10px 0;}
+.container {
+    width: 100%;
+    max-width: 1690px;
+    margin: 0 auto;
+}
+.inner {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .8);
+    margin: 0 auto;
+    height: 100vh;
+}
+/*     HEADER         */
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    }
+.img_steam {
+    width: 80px;
+    height: 80px;
+}
+.steam {
+    margin: 0 20px 0 30px;
+}
+.logo {
+    font-size: 30px;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 30px;
+}
+.exit {
+    width: 30px;
+    height: 30px;
+    margin: 0 50px 0 0;
+}
+.text { 
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #fff; 
+    margin: 0 30px 0 0;
+    pointer-events: none;
+}
+.nav {
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+}
+/*      main      */
+.text_main {
+    font-size: 40px;
+    color: #fff;
+    font-family: sans-serif;
+    
+}
+.form {
+    margin: 30px 0 0 0;
+}
+.main {     
+    padding: 340px 0 0 400px;
+} 
+.input {
+    width: 900px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #144475;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+}
+/*    footer   */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+}
+.footer_text {
+    font-size: 30px;
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 10px 20px 50px;
+}
+.offerta {
+    font-size: 30px;
+    display: block;
+    width: 160px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.offerta::after {
+    background-color: #fff; 
+    display: block;
+    content: "";
+    height: 2px; 
+    width: 100%;
+    /*        button      */
+}
+.button {
+    width: 500px;
+    height: 100px;
+    background: linear-gradient(160deg, #24b1fc, #594fee);
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 0 25px 0;
+    margin: 80px 0 0 0;
+}
+.pay {
+    color: #fff;
+    font-size: 46px;
+}
