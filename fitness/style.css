@@ -1,0 +1,80 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #a3c2a1d3;
+}
+/*       header         */
+.header {
+    background: rgba(0, 0, 0);
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+.hamburger {
+    width: 100px;
+    height: 16px;
+    background: #FCFCFC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+    }
+.hamburger:before {
+    top: -30px;
+}
+.hamburger:after {
+    top: 30px;
+}
+/* burger */
+.icon-one {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.hamburger-one:before,
+.hamburger-one:after {
+    content: '';
+    position:absolute;
+    width: 100px;
+    height: 16px;
+    background:#FCFCFC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition:0.5s;
+}
+.icon-one.active-one .hamburger-one {
+    background:rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+.icon-one.active-one .hamburger-one:before {
+    top: 0;
+    transform:rotate(45deg);
+}
+.icon-one.active-one .hamburger-one:after {
+    top: 0;
+    transform:rotate(135deg);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+/*             main                    */
+.container {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+}
+.main {
+    top: 200px;
+    position: absolute;
+}
+.btn {
+    color: #FCFCFC;
+    border: 2px #000 solid;
+    width: 200px;
+    height: 100px;
+}
+.input {
+    color: #FCFCFC;
+    width: 500px;
+    height: 100px;
+    border-bottom: 2px #000 solid;
+    color: #000;
+    font-size: 60px;
+    background: none;
+}
