@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="pay.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
     <div class="inner">
@@ -26,23 +27,24 @@
             <div class="main">
                 <div class="form">
                     <h1 class="text_main">ВВЕДИТЕ СУММУ:</h1>
-                    <input class="input">
+                    <input id="money" class="input">
                 </div>
                 <div class="form">
                     <h2 class="text_main">ЛОГИН STEAM:</h2>
-                    <input class="input">
+                    <input id="login" class="input">
                 </div>
-            <a class="button" href="pay.html">
+            <button onclick="myFunction()" class="button">
                 <div>
                     <h2 class="pay">ОПЛАТИТЬ</h2>
                 </div>
-            </a>
+            </button>
         </div>
             </div>
         </div>
         <footer class="footer">
-            <p class="footer_text">оплачивая счёт вы соглашаетесь с</p><a class="offerta" href="#">офертой</a>
+            <p class="footer_text">оплачивая счёт вы соглашаетесь с<a class="offerta" href="#">офертой</a></p>
         </footer>
     </div>
+    <script src="script/pay.js"></script>
 </body>
 </html>

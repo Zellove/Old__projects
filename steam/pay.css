@@ -4,6 +4,7 @@ body {
     text-decoration:none;
     background: url("img/Steam-background.jpeg");
     z-index: 1;
+    
     }
     *,
     *:before,
@@ -26,6 +27,9 @@ body {
     background-color: rgba(0, 0, 0, .8);
     margin: 0 auto;
     height: 100vh;
+    width: 100%;
+    position: fixed;
+
 }
 /*     HEADER         */
 .header {
@@ -68,6 +72,7 @@ body {
     justify-content: space-between;
     padding: 10px;
     display: flex;
+    align-items: center;
 }
 /*      main      */
 .text_main {
@@ -80,7 +85,7 @@ body {
     margin: 30px 0 0 0;
 }
 .main {     
-    padding: 340px 0 0 400px;
+    padding: 270px 0 0 320px;
 } 
 .input {
     width: 900px;
@@ -93,13 +98,14 @@ body {
 }
 /*    footer   */
 .footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 80px;
     background-color: rgba(0, 0, 0, .8);
     display: flex;
+    z-index: 101;
 }
 .footer_text {
     font-size: 30px;
@@ -111,10 +117,10 @@ body {
 .offerta {
     font-size: 30px;
     display: block;
-    width: 160px;
+    width: -1px;
     color: #fff;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin: 0 10px;
 }
 .offerta::after {
     background-color: #fff; 
@@ -125,6 +131,7 @@ body {
     /*        button      */
 }
 .button {
+    border: none;
     width: 500px;
     height: 100px;
     background: linear-gradient(160deg, #24b1fc, #594fee);
@@ -134,8 +141,89 @@ body {
     align-items: center;
     border-radius: 25px 0 25px 0;
     margin: 80px 0 0 0;
+    cursor: pointer;
 }
 .pay {
     color: #fff;
     font-size: 46px;
+    font-family: "Montserrat";
 }
+
+
+
+
+/*           media       */
+
+
+
+@media (max-width: 1441px) {
+    .button {
+        width: 30%;
+        height: 70px;
+        margin: 10% 5% 20% 0;
+    }
+    .pay {
+        font-size: 200%;
+    }
+    .footer_text {
+        font-size: 120%;
+    }
+    .footer {
+        height: 10%;
+    }
+    .header {
+        height: 10%;
+    }
+    .steam {
+        margin: 10% 0 0 5%;
+    }
+    .logo, .text, .offerta {
+        font-size: 120%;
+    }
+    .input {
+        width: 70%;
+        height: 40px;
+    }
+    .text_main {
+        font-size: 150%;
+    }
+    .main {
+        padding: 20%;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 914px) {
+    .button {
+    float: none;
+    margin: 10% auto;
+    width: 70%;
+    }
+    .main {
+        margin: 20% 0;
+    }
+    .pay {
+        font-size: 150%;
+    }
+ 
+}
+@media (max-width: 589px) {
+    .offerta {
+        
+        flex-wrap: wrap;
+    }
+    .input {
+        width: 120%;
+        display: block;
+        transform: translate(-10%, 0);
+    }
+
+}
+
+
+
+
+
